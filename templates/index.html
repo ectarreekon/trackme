@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Location Tracker</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 600px; 
+            margin: 0 auto; 
+            padding: 20px; 
+        }
+        #map { 
+            height: 400px; 
+            width: 100%; 
+            margin-bottom: 20px;
+        }
+        #errorMessage {
+            color: red;
+            background-color: #ffeeee;
+            padding: 10px;
+            margin-bottom: 10px;
+            display: none;
+        }
+        .tracking-controls {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .location-item {
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Philippines Location Tracker</h1>
+    
+    <!-- Error Message Display -->
+    <div id="errorMessage"></div>
+    
+    <!-- Tracking Controls -->
+    <div class="tracking-controls">
+        <button id="startTracking">Start Tracking</button>
+        <button id="stopTracking">Stop Tracking</button>
+    </div>
+
+    <!-- Map Container -->
+    <div id="map"></div>
+    
+    <!-- Location History -->
+    <div id="locationList"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="/static/app.js"></script>
+</body>
+</html>
