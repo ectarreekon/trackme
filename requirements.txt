@@ -1,8 +1,8 @@
 # requirements.txt
-flask==2.1.0
-flask-cors==3.0.10
-pymongo==4.3.3
-python-dotenv==0.21.0
-gunicorn==20.1.0
-gevent==22.10.2
-requests==2.28.2
+flask
+flask-cors
+pymongo
+python-dotenv
+gunicorn
+gevent
+requests
